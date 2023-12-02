@@ -6,6 +6,8 @@ import SciComIcon from './icons/SciCom';
 import EmailIcon from './icons/Email';
 import PublicationsIcon from './icons/Publications';
 import Link from 'next/link';
+import CVPDF from '../public/cv.pdf';
+import CVIcon from './icons/CV';
 
 
 const Footer: React.FC = () => {
@@ -15,6 +17,12 @@ const Footer: React.FC = () => {
             "text": "About Me",
             "href": "/about",
             "icon": <AboutMeIcon/>
+        },
+        {
+            "name": "cv",
+            "text": "CV",
+            "href": CVPDF,
+            "icon": <CVIcon/>
         },
         {
             "name": "linkedin",
@@ -34,7 +42,6 @@ const Footer: React.FC = () => {
             "href": "https://scholar.google.com/citations?user=5a-G8F4AAAAJ&hl=en",
             "icon": <PublicationsIcon/>
         },
-        
         {
             "name": "email",
             "text": "Email",
@@ -49,7 +56,7 @@ const Footer: React.FC = () => {
                 {footerLinks.map((l) => {
                     return (
                         <a href={l.href} target={l.name !== 'about' ? "_blank" : undefined} rel={l.name === 'about' ? "noopener noreferrer" : undefined} >
-                            <Row tw="w-9 h-9 sm:w-12 sm:h-12 rounded-full overflow-hidden fill-white shadow-[2px 2px 2px black]">
+                            <Row tw="w-9 h-9 sm:w-12 sm:h-12 rounded-full overflow-hidden fill-white shadow-[2px 2px 2px black] duration-200 hover:-translate-y-1">
                                 {l.icon}
                             </Row>
                         </a>

@@ -8,11 +8,6 @@ const CustomStyles = createGlobalStyle`
     html {
       color-scheme: dark;
     }
-
-    html,
-    body {
-      background: #212121 !important;
-    }
   }
 
   * {
