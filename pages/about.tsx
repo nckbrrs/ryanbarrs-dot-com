@@ -11,7 +11,9 @@ const Home: React.FC<{users: any}> = ({ users }) => (
       <Col tw="w-full h-fit xl:h-full my-8 xl:my-20 max-w-[1300px] px-8 xl:px-4 xl:space-x-8 xl:flex-row">
         {/* headshot */}
         <Row tw="h-full xl:w-2/5 justify-center items-center">
-          <img src="headshot.png" tw="h-full aspect-square rounded-full border-4 shadow-md shadow-black max-h-96"/>
+          <Row tw="aspect-square">
+            <img src="headshot.png" tw="border-4 rounded-full shadow-md shadow-black max-h-96"/>
+          </Row>
         </Row>
 
         {/* about */}
