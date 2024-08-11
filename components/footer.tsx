@@ -52,11 +52,11 @@ const Footer: React.FC = () => {
 
     return (
         <>
-            <Row tw="lg:hidden justify-center items-center space-x-5 sm:space-x-7 ">
+            <Row tw="lg:hidden justify-center items-center space-x-3 sm:space-x-5 ">
                 {footerLinks.map((l) => {
                     return (
                         <a href={l.href} target={l.name !== 'about' ? "_blank" : undefined} rel={l.name === 'about' ? "noopener noreferrer" : undefined} >
-                            <Row tw="w-9 h-9 sm:w-12 sm:h-12 rounded-full overflow-hidden fill-white shadow-[2px 2px 2px black] duration-200 hover:-translate-y-1">
+                            <Row tw="w-9 h-9 p-2 sm:w-12 sm:h-12 rounded-full overflow-hidden fill-white shadow-[2px 2px 2px black] duration-200 hover:-translate-y-1">
                                 {l.icon}
                             </Row>
                         </a>
