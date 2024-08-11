@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
 
     return (
         <>
-            <Row tw="lg:hidden justify-center items-center space-x-5 sm:space-x-7">
+            <Row tw="lg:hidden justify-center items-center space-x-5 sm:space-x-7 ">
                 {footerLinks.map((l) => {
                     return (
                         <a href={l.href} target={l.name !== 'about' ? "_blank" : undefined} rel={l.name === 'about' ? "noopener noreferrer" : undefined} >

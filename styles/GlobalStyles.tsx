@@ -16,10 +16,17 @@ const CustomStyles = createGlobalStyle`
     margin: 0;
   }
   
-  html,
   body {
-    background: url('background.jpg');
+
+    background: linear-gradient(
+          rgba(0, 0, 0, 0.2), 
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 1)
+        ), url('background2.jpg');
+    
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 
   }
   

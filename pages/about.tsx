@@ -8,11 +8,11 @@ const Home: React.FC<{users: any}> = ({ users }) => (
       <title>Ryan Barrs / About</title>
     </Head>
     <Col tw="h-full justify-center items-center">
-      <Col tw="w-full h-fit xl:h-full my-8 xl:my-20 max-w-[1300px] px-8 xl:px-4 xl:space-x-8 xl:flex-row">
+      <Col tw="w-full h-fit xl:h-full my-8 xl:mt-10 xl:mb-14 max-w-[1300px] px-8 xl:px-4 xl:space-x-8 xl:flex-row">
         {/* headshot */}
         <Row tw="h-full xl:w-2/5 justify-center items-center">
           <Row tw="aspect-square">
-            <img src="headshot.png" tw="border-4 rounded-full shadow-md shadow-black max-h-96"/>
+            <img src="headshot.png" tw="border-2 rounded-full shadow-md shadow-black max-h-96"/>
           </Row>
         </Row>
 
