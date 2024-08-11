@@ -16,8 +16,13 @@ const CustomStyles = createGlobalStyle`
     margin: 0;
   }
   
-  body {
-
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
     background: linear-gradient(
           rgba(0, 0, 0, 0.2), 
           rgba(0, 0, 0, 0.6),
@@ -25,9 +30,9 @@ const CustomStyles = createGlobalStyle`
         ), url('background2.jpg');
     
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
 
+    z-index: -1;
   }
   
   a {
