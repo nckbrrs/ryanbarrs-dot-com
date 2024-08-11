@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
         {
             "name": "email",
             "text": "Email",
-            "href": "mailto:rwbarrs@g.clemson.edu",
+            "href": "mailto:barrsr@icloud.com",
             "icon": <EmailIcon/>
         }
     ];
