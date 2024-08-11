@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
                 {footerLinks.map((l) => {
                     return (
                         <a href={l.href} target={l.name !== 'about' ? "_blank" : undefined} rel={l.name === 'about' ? "noopener noreferrer" : undefined} >
-                            <Row tw="w-9 h-9 p-2 sm:w-12 sm:h-12 rounded-full overflow-hidden fill-white shadow-[2px 2px 2px black] duration-200 hover:-translate-y-1">
+                            <Row tw="w-9 h-9 p-2 sm:w-12 sm:h-12 rounded-full overflow-hidden fill-white drop-shadow-[2px 2px 2px rgba(255,255,255,0.25)] duration-200 hover:-translate-y-1">
                                 {l.icon}
                             </Row>
                         </a>
@@ -67,13 +67,13 @@ const Footer: React.FC = () => {
                 {footerLinks.map((l) => {
                     return l.name === 'about' ? (
                         <Link href="/about">
-                            <Row tw="cursor-pointer fill-white w-fit text-white font-serif text-2xl drop-shadow-[2px 2px 2px black] duration-200 hover:-translate-y-1">
+                            <Row tw="cursor-pointer fill-white w-fit text-white font-serif text-2xl drop-shadow-[2px 2px 2px rgba(255,255,255,0.25)] duration-200 hover:-translate-y-1">
                                 {l.text}
                             </Row>
                         </Link>
                     ) : (
                         <a href={l.href} target="_blank" rel="noopener noreferrer">
-                            <Row tw="cursor-pointer fill-white w-fit text-white font-serif text-2xl drop-shadow-[2px 2px 2px black] duration-200 hover:-translate-y-1">
+                            <Row tw="cursor-pointer fill-white w-fit text-white font-serif text-2xl drop-shadow-[2px 2px 2px rgba(255,255,255,0.25)] duration-200 hover:-translate-y-1">
                                 {l.text}
                             </Row>
                         </a>
