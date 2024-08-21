@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
             <Row tw="hidden lg:flex justify-center items-center space-x-12">
                 {footerLinks.map((l) => {
                     return l.name === 'about' ? (
-                        <Link href="/about">
+                        <Link href="/about" key={l.name}>
                             <Row tw="cursor-pointer fill-white w-fit text-white font-serif text-2xl drop-shadow-[2px 2px 2px rgba(255,255,255,0.25)] duration-200 hover:-translate-y-1">
                                 {l.text}
                             </Row>

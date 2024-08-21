@@ -30,7 +30,7 @@ const CustomStyles = createGlobalStyle`
         ), url('background2.jpg');
     
     background-size: cover;
-    background-position: center;
+    background-position: top;
 
     z-index: -1;
   }
