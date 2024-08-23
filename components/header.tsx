@@ -13,11 +13,13 @@ const Header: React.FC = () => {
         setHamburgerState(hamburgerState === 'closed' ? 'open' : 'closed');
     }
 
-    document.onkeydown = ((event) => {
-        if (event.key === "Escape") {
-            setHamburgerState('closed')
-        }
-    })
+    if (typeof window !== 'undefined') {
+        document.onkeydown = ((event) => {
+            if (event.key === "Escape") {
+                setHamburgerState('closed')
+            }
+        })
+    }
 
     const links: {linkType: 'external' | 'local', text: string, href: string}[] = [
         { 
@@ -39,6 +41,11 @@ const Header: React.FC = () => {
             linkType: 'external',
             text: 'LinkedIn',
             href: 'https://www.linkedin.com/in/ryanbarrs'
+        },
+        {
+            linkType: 'external',
+            text: 'Publications',
+            href: 'https://scholar.google.com/citations?user=5a-G8F4AAAAJ&hl=en'
         },
         {
             linkType: 'external',
