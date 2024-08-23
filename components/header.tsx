@@ -34,16 +34,6 @@ const Header: React.FC = () => {
         },
         {
             linkType: 'external',
-            text: 'CV',
-            href: CVPDF
-        },
-        {
-            linkType: 'external',
-            text: 'LinkedIn',
-            href: 'https://www.linkedin.com/in/ryanbarrs'
-        },
-        {
-            linkType: 'external',
             text: 'Publications',
             href: 'https://scholar.google.com/citations?user=5a-G8F4AAAAJ&hl=en'
         },
@@ -52,6 +42,17 @@ const Header: React.FC = () => {
             text: 'Clippings',
             href: 'https://www.clippings.me/ryanbarrs'
         },
+        {
+            linkType: 'external',
+            text: 'CV',
+            href: CVPDF
+        },
+        {
+            linkType: 'external',
+            text: 'LinkedIn',
+            href: 'https://www.linkedin.com/in/ryanbarrs'
+        },
+        
         {
             linkType: 'external',
             text: 'Email',
