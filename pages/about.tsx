@@ -9,7 +9,7 @@ const Home: React.FC<{users: any}> = ({ users }) => (
     </Head>
     <Col tw="h-full justify-center items-center">
       {/* <Col tw="w-full h-fit xl:h-full my-8 xl:mt-10 xl:mb-14 max-w-[1300px] px-8 xl:px-4 xl:space-x-8 xl:flex-row"> */}
-      <Col tw="w-full h-fit my-8 max-w-[1300px] px-8 xl:w-4/5">
+      <Col tw="w-full h-fit my-8 max-w-[1300px] px-2 md:px-8 xl:w-4/5">
         {/* headshot */}
         <Row tw="h-full justify-center items-center">
           <Row tw="aspect-square">
