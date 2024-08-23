@@ -74,11 +74,11 @@ const Header: React.FC = () => {
                         <MenuLinksCol className="group">
                             {links.map((l) => 
                                 l.linkType === 'external' ? (
-                                    <a tw="w-full" href={l.href} target="_blank" rel="noopener noreferrer">
+                                    <a tw="w-full" href={l.href} target="_blank" rel="noopener noreferrer" onClick={(() => setHamburgerState('closed'))}>
                                         <LinkText>{l.text}</LinkText>
                                     </a>
                                 ) : (
-                                    <Link tw="w-full" href={`${l.href}`} onClick={(() => setHamburgerState('closed'))} >
+                                    <Link tw="w-full" href={`${l.href}`} onClick={(() => setHamburgerState('closed'))}>
                                         <LinkText>{l.text}</LinkText>
                                     </Link>
                                 )
