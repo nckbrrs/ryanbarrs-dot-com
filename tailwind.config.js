@@ -12,7 +12,9 @@ const colors = {
 
 const fontFamily = {
   'sans': ["Helvetica Neue", "ui-sans-serif", "system-ui", "-apple-system", "Arial", "sans-serif"],
-  'serif': ["Vollkorn", "ui-serif", "serif"]
+  'serif': ["Vollkorn", "ui-serif", "serif"],
+  'canelaDeck-Bold': ["CanelaDeck-Bold", "Vollkorn", "ui-serif", "serif"],
+  'canelaDeck': ["CanelaDeck", "Vollkorn", "ui-serif", "serif"],
 }
 
 const letterSpacing = {

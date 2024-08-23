@@ -25,7 +25,7 @@ const NotFound: React.FC = () => {
             <Head>
                 <title>Ryan Barrs / 404</title>
             </Head>
-            <ColCentered tw="h-full text-white font-serif">
+            <ColCentered tw="h-full text-white font-canelaDeck-Bold">
                 <p>Oops! There's nothing here!</p>
                 <p>In {secondsToWaitBeforeRerouting - secondsOnPage} seconds, you will be navigated to the <Link href="/">home page.</Link></p>
             </ColCentered>
