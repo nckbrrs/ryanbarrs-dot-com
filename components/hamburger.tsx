@@ -32,7 +32,6 @@ const hamburgerBarHeightStr = `${hamburgerBarHeight}`
 const HamburgerBar = styled(MotionRow)`
     ${tw`bg-bone`}
     ${tw`h-[${hamburgerBarHeightStr}% ]`}
-    ${tw`drop-shadow-[0px 1px 1px black]`}
 `
 
 const hamburgerBarMotionVariants = {
