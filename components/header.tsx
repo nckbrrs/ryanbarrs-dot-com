@@ -98,8 +98,8 @@ const Container = styled(Row)(() => [
     tw`
         justify-start
         items-center
-        pt-6 sm:pt-10 md:pt-12 lg:pt-20
-        overflow-hidden
+        mt-6 sm:mt-10 md:mt-12 lg:mt-20
+        h-10
     `
 ])
 
@@ -116,11 +116,12 @@ const MenuLinksCol = styled(Col)(() => [
 const HamburgerContainer = styled(Col)(() => [
     tw`
         z-20
-        w-10
-        h-10
+        aspect-square
+        h-full
         cursor-pointer
         duration-75
         hover:scale-110
+        justify-start
     `
 ])
 
