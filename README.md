@@ -1,3 +1,3 @@
 # Overview
 
-My brother's personal website, [ryanbarrs.com](ryanbarrs.com)
+Code for my brother's personal website, [ryanbarrs.com](https://www.ryanbarrs.com)
