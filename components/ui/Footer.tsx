@@ -24,7 +24,7 @@ const Container = (props: {children: React.ReactNode}) => (
             text-[0.75em]
             tracking-wide
             text-bone
-            [&>*]:opacity-30
+            [&>*]:opacity-20
         `}
     >
         {props.children}

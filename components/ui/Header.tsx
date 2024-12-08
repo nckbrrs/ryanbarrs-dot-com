@@ -1,6 +1,7 @@
 "use client"
 import { useState } from 'react';
 import CVPDF from '../../public/cv.pdf';
+import Resume from '../../public/resume.pdf';
 import Hamburger from './Hamburger';
 import { AnimatePresence, HTMLMotionProps, motion } from 'framer-motion';
 import Link from 'next/link';
@@ -40,10 +41,15 @@ const Header: React.FC = () => {
             text: 'Clippings',
             href: 'https://www.clippings.me/ryanbarrs'
         },
+        // {
+        //     linkType: 'external',
+        //     text: 'CV',
+        //     href: CVPDF
+        // },
         {
             linkType: 'external',
-            text: 'CV',
-            href: CVPDF
+            text: 'Resume',
+            href: Resume
         },
         {
             linkType: 'external',
