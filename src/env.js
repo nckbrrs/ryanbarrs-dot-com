@@ -9,14 +9,14 @@ export const env = createEnv({
 	server: {
 		NODE_ENV: z
 			.enum(["development", "test", "production"])
-			.default("development")
-		// DATABASE_URL: z
-		// 	.string()
-		// 	.url()
-		// 	.refine(
-		// 		(str) => !str.includes("YOUR_DATABASE_URL_HERE"),
-		// 		"You forgot to change the default URL"
-		// 	)
+			.default("development"),
+		DATABASE_URL: z
+			.string()
+			.url()
+			.refine(
+				(str) => !str.includes("YOUR_DATABASE_URL_HERE"),
+				"You forgot to change the default URL"
+			)
 	},
 
 	/**
@@ -33,8 +33,8 @@ export const env = createEnv({
 	 * middlewares) or client-side so we need to destruct manually.
 	 */
 	runtimeEnv: {
-		// DATABASE_URL: process.env.DATABASE_URL,
-		NODE_ENV: process.env.NODE_ENV
+		NODE_ENV: process.env.NODE_ENV,
+		DATABASE_URL: process.env.DATABASE_URL
 		// NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
 	},
 	/**
