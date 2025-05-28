@@ -76,7 +76,7 @@ export default function TopNav() {
 		{
 			linkType: "external",
 			text: "Publications",
-			href: "https://scholar.google.com/citations?user=5a-G8F4AAAAJ&hl=en"
+			href: "https://scholar.google.com/citations?user=-0jD4_wAAAAJ"
 		},
 		{
 			linkType: "external",
