@@ -21,9 +21,9 @@ export default function About() {
 	const pStyling = `
 		font-serif
 		text-bone
-		traacking-wide
-		text-xl md:text-2xl
-		drop-shadow-[1px 1px 1px black]
+		tracking-normal
+		text-2xl lg:text-3xl
+		drop-shadow-lg
 	`;
 
 	return (

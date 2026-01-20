@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import FullScreenMenu from "./FullScreenMenu";
 import Hamburger from "./Hamburger";
-import Resume from "../../public/resume.pdf";
 import CVPDF from "../../public/cv.pdf";
 
 export default function TopNav() {
@@ -80,18 +79,13 @@ export default function TopNav() {
 		},
 		{
 			linkType: "external",
-			text: "Clippings",
+			text: "Science Communications",
 			href: "https://www.clippings.me/ryanbarrs"
 		},
-		// {
-		//     linkType: 'external',
-		//     text: 'CV',
-		//     href: CVPDF
-		// },
 		{
-			linkType: "external",
-			text: "Resume",
-			href: Resume
+		    linkType: 'external',
+		    text: 'CV',
+		    href: CVPDF
 		},
 		{
 			linkType: "external",

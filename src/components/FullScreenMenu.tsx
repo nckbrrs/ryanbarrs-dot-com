@@ -62,14 +62,15 @@ const menuLinksColStyling = `
     group
     items-start
     justify-center
-    space-y-0 lg:space-y-1
+    space-y-4
     translate-y-2 
+	px-6
 `;
 
 const linkTextStyling = `
 	w-full
 	px-2
-    text-4xl md:text-5xl lg:text-7xl
+    text-4xl md:text-5xl lg:text-6xl
     font-bold
 	font-serif
 	text-bone
