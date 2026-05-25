@@ -18,7 +18,6 @@ export const metadata: Metadata = {
   ),
   title: "Ryan Barrs",
   description: "Bioengineering PhD in Charleston, SC",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
   openGraph: {
     title: "Ryan Barrs",
     description: "Bioengineering PhD in Charleston, SC",
