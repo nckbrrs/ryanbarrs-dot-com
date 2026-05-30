@@ -36,7 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={canelaDeck.variable}>
       <body className={cn(
         "antialiased", 
-        "flex flex-col h-screen w-full items-center"
+        "flex flex-col h-screen w-full items-center bg-[#55657F]"
       )}>
         <TopNav />
         {children}
