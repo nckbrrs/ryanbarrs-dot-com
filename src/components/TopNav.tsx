@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import FullScreenMenu from "./FullScreenMenu";
 import Hamburger from "./Hamburger";
+import { useMenuState } from "~/hooks/useMenuState";
 import { cn } from "~/lib/utils";
 
 const links: { linkType: "external" | "local"; text: string; href: string }[] = [
@@ -24,27 +24,7 @@ const links: { linkType: "external" | "local"; text: string; href: string }[] = 
 ];
 
 export default function TopNav() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const open = () => {
-    setIsOpen(true);
-    document.body.style.overflow = "hidden";
-  };
-
-  const close = () => {
-    setIsOpen(false);
-    document.body.style.overflow = "";
-  };
-
-  const toggle = () => (isOpen ? close() : open());
-
-  useEffect(() => {
-    const handleKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") close();
-    };
-    document.addEventListener("keydown", handleKey);
-    return () => document.removeEventListener("keydown", handleKey);
-  }, []);
+  const { isOpen, close, toggle } = useMenuState();
 
   return (
     <>
